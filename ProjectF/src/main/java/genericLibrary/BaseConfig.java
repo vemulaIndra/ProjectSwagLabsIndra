@@ -28,7 +28,7 @@ public class BaseConfig {
 
 	@BeforeClass
 	public void browserSetup() {	
-	String browsername = "Chrome";
+	String browsername = "chrome";
 
 		// Open the Browser
 		driver = WebDriverLibrary.openBrowser(browsername);

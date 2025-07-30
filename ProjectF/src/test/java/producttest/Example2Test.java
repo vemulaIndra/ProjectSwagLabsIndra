@@ -15,7 +15,7 @@ import pagerepository.HomePage;
 @Listeners(listenerlibrary.ListenerImplementation.class)
 
 public class Example2Test extends BaseConfig{
-	@Test(groups="RT", priority = 1, enabled = true, invocationCount = 1, dataProvider = "ProjectG")
+	@Test(groups="RT", priority = 1, enabled = true, invocationCount = 1, dataProvider = "CheckoutInfo")
 	public void orderProducts(String FirstName, String LastName, String ZipCode) {
 		
 		Reporter.log(FirstName);
