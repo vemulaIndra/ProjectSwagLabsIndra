@@ -31,11 +31,12 @@ public class BaseConfig {
 	public String FirstName;
 	public String LastName;
 	public String ZipCode;
+	
+	
 	public ExtentReports report;
 	public ExtentTest test;
 	public ExtentSparkReporter spark;
-
-	@Parameters("Browser")
+	
 	
 	@BeforeTest
 	public void ReportSetup()
@@ -69,6 +70,10 @@ public class BaseConfig {
 		//Flush the Report Information
 				report.flush();
 	}
+
+	@Parameters("Browser")
+	
+	
 
 	@BeforeClass
 	public void browserSetup() {	
@@ -213,7 +218,7 @@ public class BaseConfig {
 
 		return data;
 		
-		@BeforeTest
+		
 
 	
 	
