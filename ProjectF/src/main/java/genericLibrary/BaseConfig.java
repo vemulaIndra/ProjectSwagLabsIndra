@@ -7,9 +7,17 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.AfterClass;
 
 
@@ -23,8 +31,44 @@ public class BaseConfig {
 	public String FirstName;
 	public String LastName;
 	public String ZipCode;
+	public ExtentReports report;
+	public ExtentTest test;
+	public ExtentSparkReporter spark;
 
 	@Parameters("Browser")
+	
+	@BeforeTest
+	public void ReportSetup()
+	{
+		//Create the SparkReport
+				spark=new ExtentSparkReporter("./AdvanceReports/report.html");
+				
+				
+				//Configure the SparkReport Information
+				spark.config().setDocumentTitle("Regression Testing for the Swaglabs ");
+				spark.config().setReportName("RegressionTestSuit");
+				spark.config().setTheme(Theme.STANDARD);
+				
+				//Create the Extent Report
+				report=new ExtentReports();
+				
+				//Attach the SparkReport and Extent Report
+				report.attachReporter(spark);
+				
+				//Configure the System Information in Extent Report
+				report.setSystemInfo("Device Name:", "Indra");
+				report.setSystemInfo("OperatingSystem:", "WINDOWS 11");
+				report.setSystemInfo("Browser:", "Chrome");
+				report.setSystemInfo("BrowserVersion:", "chrome-138.0.7204.169");
+
+	}
+	
+	@AfterTest
+	public void ReportTerminate()
+	{
+		//Flush the Report Information
+				report.flush();
+	}
 
 	@BeforeClass
 	public void browserSetup() {	
@@ -168,6 +212,8 @@ public class BaseConfig {
 		data[0][2] = ExcelLibrary.readsingledata("ProjectG", 1, 2);
 
 		return data;
+		
+		@BeforeTest
 
 	
 	

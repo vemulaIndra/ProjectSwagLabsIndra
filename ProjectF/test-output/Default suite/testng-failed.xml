@@ -9,6 +9,8 @@
           <include name="orderProducts"/>
           <include name="LogIn"/>
           <include name="browserSetup"/>
+          <include name="ReportTerminate"/>
+          <include name="ReportSetup"/>
           <include name="broserTerminate"/>
         </methods>
       </class> <!-- producttest.Example2Test -->
