@@ -14,48 +14,48 @@
       <![CDATA[Logout is done]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-31T10:59:41 IST" name="RegressionSuite" finished-at="2025-07-31T10:59:58 IST" duration-ms="16372">
+  <suite started-at="2025-07-31T13:12:03 IST" name="RegressionSuite" finished-at="2025-07-31T13:12:21 IST" duration-ms="17285">
     <groups>
     </groups>
-    <test started-at="2025-07-31T10:59:41 IST" name="Test" finished-at="2025-07-31T10:59:58 IST" duration-ms="16372">
+    <test started-at="2025-07-31T13:12:03 IST" name="Test" finished-at="2025-07-31T13:12:21 IST" duration-ms="17285">
       <class name="producttest.TeamFTest">
-        <test-method is-config="true" signature="ReportSetup()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T10:59:41 IST" name="ReportSetup" finished-at="2025-07-31T10:59:42 IST" duration-ms="599" status="PASS">
+        <test-method is-config="true" signature="ReportSetup()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T13:12:03 IST" name="ReportSetup" finished-at="2025-07-31T13:12:04 IST" duration-ms="589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReportSetup -->
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T10:59:42 IST" name="browserSetup" finished-at="2025-07-31T10:59:54 IST" duration-ms="11530" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T13:12:04 IST" name="browserSetup" finished-at="2025-07-31T13:12:15 IST" duration-ms="11088" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser setup is done]]>
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="LogIn()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T10:59:54 IST" name="LogIn" finished-at="2025-07-31T10:59:55 IST" duration-ms="1661" status="PASS">
+        <test-method is-config="true" signature="LogIn()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T13:12:15 IST" name="LogIn" finished-at="2025-07-31T13:12:18 IST" duration-ms="2467" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method signature="Indra()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T10:59:55 IST" name="Indra" finished-at="2025-07-31T10:59:55 IST" duration-ms="227" status="PASS">
+        <test-method signature="Indra()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T13:12:18 IST" name="Indra" finished-at="2025-07-31T13:12:18 IST" duration-ms="243" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Indra]]>
             </line>
           </reporter-output>
         </test-method> <!-- Indra -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T10:59:56 IST" name="Logout" finished-at="2025-07-31T10:59:56 IST" duration-ms="682" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T13:12:18 IST" name="Logout" finished-at="2025-07-31T13:12:19 IST" duration-ms="860" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logout is done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="broserTerminate()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T10:59:56 IST" name="broserTerminate" finished-at="2025-07-31T10:59:57 IST" duration-ms="653" status="PASS">
+        <test-method is-config="true" signature="broserTerminate()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T13:12:19 IST" name="broserTerminate" finished-at="2025-07-31T13:12:20 IST" duration-ms="738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- broserTerminate -->
-        <test-method is-config="true" signature="ReportTerminate()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T10:59:57 IST" name="ReportTerminate" finished-at="2025-07-31T10:59:58 IST" duration-ms="834" status="PASS">
+        <test-method is-config="true" signature="ReportTerminate()[pri:0, instance:producttest.TeamFTest@38102d01]" started-at="2025-07-31T13:12:20 IST" name="ReportTerminate" finished-at="2025-07-31T13:12:21 IST" duration-ms="930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReportTerminate -->
